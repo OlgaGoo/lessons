@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+
+
     # Buttons
     <color name="red">#E00420</color>
     <color name="very_light_grey">#DFE2E4</color>
@@ -11,4 +13,8 @@
     <color name="grey">#9DA5A8</color>
     <color name="deep_grey">#737A80</color>
     <color name="very_deep_grey">#31343A</color>
+    <color name="orange">#e16b1b</color>
+    <color name="red_log_in">#e83929</color>
+    <color name="white">#FFF</color>
+
 </resources>

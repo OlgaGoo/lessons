@@ -2,6 +2,12 @@
     <string name="app_name">Lessons</string>
     <string name="title_activity_lesson_one">LessonOneActivity</string>
     <string name="title_activity_lesson_two">LessonTwoActivity</string>
-
     <string name="lesson_one_title">Lesson one</string>
+
+    ## Start screen
+    <string name="forgot_credentials"><u>Forgot your username/password?</u></string>
+    <string name="log_in_button">Log in</string>
+    <string name="create_account_button">Create account</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
 </resources>
