@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    # Buttons
+    <color name="red">#E00420</color>
+    <color name="very_light_grey">#DFE2E4</color>
+    <color name="light_grey">#B6BBBE</color>
+    <color name="grey">#9DA5A8</color>
+    <color name="deep_grey">#737A80</color>
+    <color name="very_deep_grey">#31343A</color>
+</resources>
