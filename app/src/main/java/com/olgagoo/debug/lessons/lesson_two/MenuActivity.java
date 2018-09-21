@@ -9,14 +9,14 @@ import android.widget.Button;
 import com.olgagoo.debug.lessons.R;
 import com.olgagoo.debug.lessons.lesson_one.LessonOneActivity;
 
-public class LessonTwoActivity extends Activity {
+public class MenuActivity extends Activity {
     Button lsOne;
     View.OnClickListener lsOneClk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson_two);
+        setContentView(R.layout.activity_menu);
 
         lsOne = (Button) findViewById(R.id.menu_btn1);
 
@@ -31,6 +31,7 @@ public class LessonTwoActivity extends Activity {
         };
 
         lsOne.setOnClickListener(lsOneClk);
+
 
     }
 
