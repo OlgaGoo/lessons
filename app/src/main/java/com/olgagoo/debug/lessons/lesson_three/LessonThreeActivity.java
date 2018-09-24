@@ -29,6 +29,7 @@ public class LessonThreeActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_USERNAME,String.valueOf(password));
 
         activity.startActivity(intent);
+       // activity.overridePendingTransition(R.anim.ischezaet,R.anim.poyavlyaetsya); // when start
     }
 
     @Override
@@ -50,6 +51,9 @@ public class LessonThreeActivity extends AppCompatActivity {
         Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(image);
     }
 
-
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // activity.overridePendingTransition(R.anim.ischezaet,R.anim.poyavlyaetsya); // back button
+    }
 }
