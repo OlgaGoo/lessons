@@ -38,8 +38,8 @@ public class CustomControl extends View {
         pen.setColor(Color.GREEN);
         canvas.drawCircle(
                 getWidth()/2,
-                getHeight(),
-                Math.min(getWidth(), getHeight()),
+                getHeight()/2,
+                Math.min(getWidth()/2, getHeight()/2),
                 pen);
 
     }
