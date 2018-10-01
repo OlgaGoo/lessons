@@ -7,11 +7,14 @@ import android.view.View;
 import android.widget.Button;
 
 import com.olgagoo.debug.lessons.R;
+import com.olgagoo.debug.lessons.lesson_five.LessonFiveActivity;
 import com.olgagoo.debug.lessons.lesson_one.LessonOneActivity;
 
 public class MenuActivity extends Activity {
     Button lsOne;
+    Button lsTwo;
     View.OnClickListener lsOneClk;
+    View.OnClickListener lsTwoClk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +22,10 @@ public class MenuActivity extends Activity {
         setContentView(R.layout.activity_menu);
 
         lsOne = (Button) findViewById(R.id.menu_btn1);
+        lsTwo = (Button) findViewById(R.id.menu_btn2);
 
         final Intent lessonOneActivity = new Intent(this,LessonOneActivity.class);
+        final Intent lessonFiveActivity = new Intent(this,LessonFiveActivity.class);
 
 
         lsOneClk = new View.OnClickListener() {
@@ -30,8 +35,15 @@ public class MenuActivity extends Activity {
             }
         };
 
-        lsOne.setOnClickListener(lsOneClk);
+        lsTwoClk = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(lessonFiveActivity);
+            }
+        };
 
+        lsOne.setOnClickListener(lsOneClk);
+        lsTwo.setOnClickListener(lsTwoClk);
 
     }
 
