@@ -41,14 +41,14 @@ public class ClockView extends View{
         Paint rectPaint = new Paint();
         float radius = Math.min(getWidth(),getHeight()/2);
 
-        pen.setColor(Color.GREEN);
         pen.setColor(Color.RED);
 
         canvas.drawCircle(
                 getWidth()/2,
-                getHeight(),
-                radius,
+                getHeight()/2,
+                Math.min(getWidth()/2, getHeight()/2),
                 pen);
+
         float yEdge = getHeight()/2 - radius;
         float xLine = getWidth()/2;
         float yStartLine = yEdge * 0.9F;
@@ -56,12 +56,10 @@ public class ClockView extends View{
 
         canvas.save();
 
-        for(int i =0; i<11; i++){
-
-            canvas.rotate(30,getWidth()/2, getHeight()/2);
-            canvas.drawLine(xLine,yStartLine,xLine,yEndLine,rectPaint);
+        for(int i =0; i<11; i++) {
+            canvas.rotate(30, getWidth() / 2, getHeight() / 2);
+            canvas.drawLine(xLine, yStartLine, xLine, yEndLine, rectPaint);
         }
-        canvas.restore();
 
         Calendar calendar = Calendar.getInstance();
         float hour = calendar.get(Calendar.HOUR);

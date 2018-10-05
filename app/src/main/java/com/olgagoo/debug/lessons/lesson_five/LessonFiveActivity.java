@@ -17,17 +17,11 @@ public class LessonFiveActivity extends AppCompatActivity {
     View clockView;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson_five);
         clockView = (View) findViewById(R.id.clockView);
-
-
-
-
-
     }
 
     @Override
@@ -50,9 +44,9 @@ public class LessonFiveActivity extends AppCompatActivity {
         public void onReceive(Context context, Intent intent) {
             intent.getAction();
             Log.e("AAA","onReceive" + intent.getAction());
-
         }
 
 
     };
+
 }

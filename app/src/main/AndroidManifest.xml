@@ -24,8 +24,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".lesson_three.LessonThreeActivity" />
-        <activity android:name=".lesson_five.LessonFiveActivity"></activity>
-        <activity android:name=".lesson_two.KotlinLessonActivity"></activity>
+        <activity android:name=".lesson_five.LessonFiveActivity" />
+        <activity android:name=".lesson_two.KotlinLessonActivity" />
+        <activity android:name=".lesson_six.ActivitySix" />
+
+        <service android:name=".lesson_six.Service" />
+
     </application>
 
 </manifest>

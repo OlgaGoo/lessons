@@ -9,12 +9,15 @@ import android.widget.Button;
 import com.olgagoo.debug.lessons.R;
 import com.olgagoo.debug.lessons.lesson_five.LessonFiveActivity;
 import com.olgagoo.debug.lessons.lesson_one.LessonOneActivity;
+import com.olgagoo.debug.lessons.lesson_six.ActivitySix;
 
 public class MenuActivity extends Activity {
     Button lsOne;
     Button lsTwo;
+    Button lsSix;
     View.OnClickListener lsOneClk;
     View.OnClickListener lsTwoClk;
+    View.OnClickListener lsTwoSix;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +26,11 @@ public class MenuActivity extends Activity {
 
         lsOne = (Button) findViewById(R.id.menu_btn1);
         lsTwo = (Button) findViewById(R.id.menu_btn2);
+        lsSix = (Button) findViewById(R.id.menu_btn3);
 
         final Intent lessonOneActivity = new Intent(this,LessonOneActivity.class);
         final Intent lessonFiveActivity = new Intent(this,LessonFiveActivity.class);
+        final Intent lessonSixActivity = new Intent(this, ActivitySix.class);
 
 
         lsOneClk = new View.OnClickListener() {
@@ -42,8 +47,16 @@ public class MenuActivity extends Activity {
             }
         };
 
+        lsTwoSix = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(lessonSixActivity);
+            }
+        };
+
         lsOne.setOnClickListener(lsOneClk);
         lsTwo.setOnClickListener(lsTwoClk);
+        lsSix.setOnClickListener(lsTwoSix);
 
     }
 

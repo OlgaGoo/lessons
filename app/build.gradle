@@ -51,7 +51,10 @@ dependencies {
 
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:recyclerview-v7:27.0.0'
 }
 repositories {
     mavenCentral()
 }
+
+apply plugin: 'kotlin-android-extensions'
