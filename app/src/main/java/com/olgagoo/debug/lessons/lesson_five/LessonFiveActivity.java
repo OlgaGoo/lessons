@@ -1,5 +1,6 @@
 package com.olgagoo.debug.lessons.lesson_five;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +14,7 @@ import android.view.View;
 import com.olgagoo.debug.lessons.R;
 import com.olgagoo.debug.lessons.lesson_two.ClockView;
 
-public class LessonFiveActivity extends AppCompatActivity {
+public class LessonFiveActivity extends Activity {
     View clockView;
 
 

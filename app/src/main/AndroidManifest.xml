@@ -27,6 +27,7 @@
         <activity android:name=".lesson_five.LessonFiveActivity" />
         <activity android:name=".lesson_two.KotlinLessonActivity" />
         <activity android:name=".lesson_six.ActivitySix" />
+        <activity android:name=".lesson_seven.LessonSevenActivity" />
 
         <service android:name=".lesson_six.Service" />
 
